@@ -1,3 +1,9 @@
+<!-- File name: index.ejs
+   Name: Ibrahim Yusuf Patel
+   Student ID: 301115080
+   Date: 30/10/2020
+-->
+
 <% include ../partials/header.ejs %>
 
     <!-- MAIN CONTENT -->
@@ -19,8 +25,8 @@
                   <th class="text-center col-md-1">Price</th>
                   <th class="text-center col-md-2">Author</th>
                   <th class="text-center col-md-1">Genre</th>
-                  <th class="text-center col-md-2"></th>
-                  <th class="text-center col-md-2"></th>
+                  <th class="text-center col-md-1"></th>
+                  <th class="text-center col-md-1"></th>
                 </tr>
                 </thead>
                 <tbody>
@@ -33,20 +39,20 @@
                   <td class="text-center col-md-2"><%= BookList[count].Author %></td>
                   <td class="text-center col-md-1"><%= BookList[count].Genre %></td>
 
-                  <td class="text-center col-md-2">
+                  <td class="text-center col-md-1">
                     <!-- ------------------------ -->
                     <!-- ADD the EDIT BUTTON HERE -->
                     <!-- ------------------------ -->
                     <a href="/books/<%= BookList[count]._id %>" class="btn btn-primary btn-sm">
-                    <i class="fas fa-pencil-alt"></i> Edit</a>
+                    <i class="fa fa-lg fa-edit"></i> Edit</a>
                   </td>
 
-                  <td class="text-center col-md-2">
+                  <td class="text-center col-md-1">
                     <!-- ------------------------ -->
                     <!-- ADD the DELETE BUTTON HERE -->
                     <!-- ------------------------ -->
                     <a href="/books/delete/<%= BookList[count]._id %>" class="btn btn-danger btn-sm">
-                    <i class="fas fa-trash-alt"></i> Delete</a>
+                    <i class="fa fa-lg fa-trash"></i> Delete</a>
                   </td>
                 </tr>
                 <% } %>

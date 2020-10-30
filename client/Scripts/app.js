@@ -1,3 +1,9 @@
+/* File name: app.js
+   Name: Ibrahim Yusuf Patel
+   Student ID: 301115080
+   Date: 30/10/2020
+*/
+
 /* custom JS goes here */
 
 /* pagination code from http://www.bootply.com/lxa0FF9yhw */
